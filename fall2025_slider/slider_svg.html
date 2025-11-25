@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+    <title>slider</title>
+    <style>
+        body{font-family:sans-serif;font-size:24px;}
+        .sliderBlock{display:inline-block;}
+        #left{width:100px;text-align:right;}
+        #right{width:100px;}
+    </style>
+</head>
+<body>
+   <div>SLIDER</div>
+   <div class = "sliderBlock" id="left"></div>
+    <div class = "sliderBlock" id="slider"><input type="range" id="myRange" min="0" max="100" value="50"></div>
+   <div class = "sliderBlock" id="right"></div>
+
+
+    <script>
+        //styling sliders: https://www.w3schools.com/howto/howto_js_rangeslider.asp
+        const slider = document.getElementById("myRange");
+        var colorScale = d3.scaleLinear().domain([0,100]).range(["red","green"])
+
+
+        var leftSide = d3.select("#left").append("svg").attr("width",100).attr("height",100)
+        var rightSide = d3.select("#right").append("svg").attr("width",100).attr("height",100)
+
+        leftSide.append("circle").attr("id","leftRect").attr("r",50/5).attr("cx",50).attr("cy",50)
+        rightSide.append("circle").attr("id","rightRect").attr("r",50/5).attr("cx",50).attr("cy",50)
+        
+        slider.oninput = function() {
+             d3.select("#leftRect").attr("r",this.value/5).attr("fill",colorScale(this.value))
+             d3.select("#rightRect").attr("r",(100-this.value)/5).attr("fill",colorScale(100-this.value))
+        };
+    </script>
+</body>
+</html>

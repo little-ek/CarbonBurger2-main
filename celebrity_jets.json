@@ -1,0 +1,183 @@
+{
+  "Eric Schmidt": {
+    "Aircraft Model": "Gulfstream G650",
+    "No Of Planes": 1,
+    "Total Miles Flown": 704738,
+    "Total Flights": 583,
+    "Total Fuel Used (gallons)": 824480,
+    "Total Flight Time (days)": 68.12,
+    "Total CO2 Pollution (metric tons)": 8239 
+  },
+  "Bill Gates": {
+    "Aircraft Model": "Gulfstream G650",
+    "No Of Planes": 2,
+    "Total Miles Flown": 871428,
+    "Total Flights": 554,
+    "Total Fuel Used (gallons)": 974800,
+    "Total Flight Time (days)": 80.92,
+    "Total CO2 Pollution (metric tons)": 9738
+  },
+  "Elon Musk": {
+    "Aircraft Model": "Gulfstream G650 & Gulfstream V",
+    "No Of Planes": 2,
+    "Total Miles Flown": 665711,
+    "Total Flights": 472,
+    "Total Fuel Used (gallons)": 694370,
+    "Total Flight Time (days)": 62.1,
+    "Total CO2 Pollution (metric tons)": 7440 
+  },
+  "P.Diddy": {
+    "Aircraft Model": "Gulfstream V",
+    "No Of Planes": 1,
+    "Total Miles Flown": 491659,
+    "Total Flights": 391,
+    "Total Fuel Used (gallons)": 457670,
+    "Total Flight Time (days)": 51.125,
+    "Total CO2 Pollution (metric tons)": 6150
+  },
+  "Travis Scott": {
+    "Aircraft Model": "Embraer E-190",
+    "No Of Planes": 1,
+    "Total Miles Flown":  460504,
+    "Total Flights": 342,
+    "Total Fuel Used (gallons)":  872540,
+    "Total Flight Time (days)": 49.17,
+    "Total CO2 Pollution (metric tons)": 11818
+  },
+  "Luke Bryan": {
+    "Aircraft Model": "Learjet 60",
+    "No Of Planes": 1,
+    "Total Miles Flown":  439594,
+    "Total Flights": 752,
+    "Total Fuel Used (gallons)":  267510,
+    "Total Flight Time (days)": 54.7,
+    "Total CO2 Pollution (metric tons)": 4007
+  },
+  "Kim Kardashian": {
+    "Aircraft Model": "Gulfstream G650",
+    "No Of Planes": 1,
+    "Total Miles Flown": 427972,
+    "Total Flights": 242,
+    "Total Fuel Used (gallons)": 474300,
+    "Total Flight Time (days)": 40.49,
+    "Total CO2 Pollution (metric tons)": 4800
+  },
+   "Michael Bloomberg": {
+    "Aircraft Model": "Dassault Falcon 900",
+    "No Of Planes": 3,
+    "Total Miles Flown": 860203,
+    "Total Flights": 836,
+    "Total Fuel Used (gallons)":  645300,
+    "Total Flight Time (days)": 88.23,
+    "Total CO2 Pollution (metric tons)": 8586
+  },
+  "Jay Z": {
+    "Aircraft Model": "Gulfstream V",
+    "No Of Planes": 1,
+    "Total Miles Flown": 386642,
+    "Total Flights": 291,
+    "Total Fuel Used (gallons)":  341990,
+    "Total Flight Time (days)": 38.21,
+    "Total CO2 Pollution (metric tons)": 4594
+  },
+  "Donald Trump": {
+    "Aircraft Model": "Boeing 757",
+    "No Of Planes": 1,
+    "Total Miles Flown": 367541,
+    "Total Flights": 453,
+    "Total Fuel Used (gallons)":  5640600,
+    "Total Flight Time (days)": 40.83,
+    "Total CO2 Pollution (metric tons)": 32344
+  },
+  "Kylie Jenner": {
+    "Aircraft Model": "Bombardier Global 7500",
+    "No Of Planes": 1,
+    "Total Miles Flown": 363237,
+    "Total Flights": 224,
+    "Total Fuel Used (gallons)":  441420,
+    "Total Flight Time (days)": 34.42,
+    "Total CO2 Pollution (metric tons)": 5033
+  },
+  "Mark Zuckerberg": {
+    "Aircraft Model": "Gulfstream G650",
+    "No Of Planes": 1,
+    "Total Miles Flown": 348449,
+    "Total Flights": 294,
+    "Total Fuel Used (gallons)":  439710,
+    "Total Flight Time (days)": 36.63,
+    "Total CO2 Pollution (metric tons)": 4390
+  },
+  "Steve Ballmer": {
+    "Aircraft Model": "Gulfstream G650",
+    "No Of Planes": 1,
+    "Total Miles Flown": 321879,
+    "Total Flights": 296,
+    "Total Fuel Used (gallons)": 382860,
+    "Total Flight Time (days)": 31.9,
+    "Total CO2 Pollution (metric tons)": 3830
+  },
+  "Tom Cruise": {
+    "Aircraft Model": "Bombardier Challenger 350",
+    "No Of Planes": 1,
+    "Total Miles Flown": 283654,
+    "Total Flights": 291,
+    "Total Fuel Used (gallons)": 246580,
+    "Total Flight Time (days)": 31.08,
+    "Total CO2 Pollution (metric tons)": 2272
+  },
+  "Sergey Brin": {
+    "Aircraft Model": "Gulfstream G650",
+    "No Of Planes": 1,
+    "Total Miles Flown": 242421,
+    "Total Flights": 101,
+    "Total Fuel Used (gallons)": 259010,
+    "Total Flight Time (days)": 23.54,
+    "Total CO2 Pollution (metric tons)": 2584
+  },
+   "Oprah Winfrey": {
+    "Aircraft Model": "Gulfstream G650",
+    "No Of Planes": 1,
+    "Total Miles Flown": 236730,
+    "Total Flights": 179,
+    "Total Fuel Used (gallons)": 282150,
+    "Total Flight Time (days)": 23.55,
+    "Total CO2 Pollution (metric tons)": 2835
+  },
+   "Alex Rodriguez": {
+    "Aircraft Model": "Gulfstream IV",
+    "No Of Planes": 1,
+    "Total Miles Flown": 221635,
+    "Total Flights": 203,
+    "Total Fuel Used (gallons)": 257560,
+    "Total Flight Time (days)": 23.8,
+    "Total CO2 Pollution (metric tons)": 3461
+  },
+   "Matt Damon": {
+    "Aircraft Model": "Bombardier Global 7500",
+    "No Of Planes": 1,
+    "Total Miles Flown": 210525,
+    "Total Flights": 160,
+    "Total Fuel Used (gallons)": 266560,
+    "Total Flight Time (days)": 21.5,
+    "Total CO2 Pollution (metric tons)": 3038
+  },
+   "Lady Gaga": {
+    "Aircraft Model": "Gulfstream V",
+    "No Of Planes": 1,
+    "Total Miles Flown": 196744,
+    "Total Flights": 123,
+    "Total Fuel Used (gallons)": 175660,
+    "Total Flight Time (days)": 19.63,
+    "Total CO2 Pollution (metric tons)": 2354
+  },
+  "Taylor Swift": {
+    "Aircraft Model": "Dassault Falcon 7X",
+    "No Of Planes": 1,
+    "Total Miles Flown": 148980,
+    "Total Flights": 136,
+    "Total Fuel Used (gallons)": 119030,
+    "Total Flight Time (days)": 15.54,
+    "Total CO2 Pollution (metric tons)": 1397
+  }
+}
+

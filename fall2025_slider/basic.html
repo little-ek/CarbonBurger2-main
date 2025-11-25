@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+    <title>slider</title>
+    <style>
+        body{font-family:sans-serif;font-size:24px;}
+        .sliderBlock{display:inline-block;}
+        #left{width:100px;text-align:right;}
+        #right{width:100px;}
+    </style>
+</head>
+<body>
+   <div>SLIDER</div>
+   <div class = "sliderBlock" id="left">50</div>
+    <div class = "sliderBlock" id="slider"><input type="range" id="myRange" min="0" max="100" value="50"></div>
+   <div class = "sliderBlock" id="right">50</div>
+
+
+    <script>
+        //styling sliders: https://www.w3schools.com/howto/howto_js_rangeslider.asp
+        const slider = document.getElementById("myRange");
+        const output = document.getElementById("rangeValue");
+        slider.oninput = function() {
+            d3.select("#left").html(this.value)
+            d3.select("#right").html(100-this.value)
+        };
+    </script>
+</body>
+</html>

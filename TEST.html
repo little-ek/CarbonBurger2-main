@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Test - Carbon Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-section {
+            background: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #333; }
+        h2 { color: #666; margin-top: 0; }
+        .pass { color: green; font-weight: bold; }
+        .fail { color: red; font-weight: bold; }
+        .info { color: blue; }
+        ul { line-height: 1.8; }
+        code {
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        .checklist li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Carbon Quiz - Pre-Launch Test</h1>
+    
+    <div class="test-section">
+        <h2>📋 Pre-Flight Checklist</h2>
+        <ul class="checklist">
+            <li>☐ All files downloaded (index.html, styles.css, main.js, 2 JSON files)</li>
+            <li>☐ Files in same directory</li>
+            <li>☐ <code>0_images/</code> folder created</li>
+            <li>☐ Images placed in <code>0_images/</code> folder</li>
+            <li>☐ Internet connection active (for D3.js)</li>
+            <li>☐ Using modern browser (Chrome, Firefox, Safari, Edge)</li>
+        </ul>
+    </div>
+
+    <div class="test-section">
+        <h2>🔍 File Verification</h2>
+        <p>Open browser console (F12) and check:</p>
+        <ul>
+            <li class="info">No 404 errors for CSS/JS files = <span class="pass">PASS</span></li>
+            <li class="info">D3.js loads from CDN = <span class="pass">PASS</span></li>
+            <li class="info">JSON files load = <span class="pass">PASS</span></li>
+            <li class="info">No JavaScript errors = <span class="pass">PASS</span></li>
+        </ul>
+    </div>
+
+    <div class="test-section">
+        <h2>✅ Functionality Tests</h2>
+        <ol style="line-height: 2;">
+            <li><strong>Title Screen</strong>
+                <ul>
+                    <li>Does title say "Not Your Average Carbon Footprint Quiz"?</li>
+                    <li>Is there a gradient purple background?</li>
+                    <li>Can you see the scroll hint?</li>
+                </ul>
+            </li>
+            <li><strong>Quiz</strong>
+                <ul>
+                    <li>Try clicking Next without selecting = Should show alert ✓</li>
+                    <li>Select all answers = Should proceed ✓</li>
+                    <li>State dropdown populated? ✓</li>
+                    <li>Results show after completion? ✓</li>
+                </ul>
+            </li>
+            <li><strong>Charts</strong>
+                <ul>
+                    <li>State comparison appears after quiz? ✓</li>
+                    <li>Celebrity chart includes your bar in blue? ✓</li>
+                    <li>Bars animate when appearing? ✓</li>
+                    <li>Tooltips work on hover? ✓</li>
+                </ul>
+            </li>
+            <li><strong>Sacrifice Calculator</strong>
+                <ul>
+                    <li>Celebrity buttons clickable? ✓</li>
+                    <li>Calculator appears when celebrity selected? ✓</li>
+                    <li>Sliders update numbers in real-time? ✓</li>
+                    <li>Gap calculation accurate? ✓</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div class="test-section">
+        <h2>📱 Responsive Test</h2>
+        <ul>
+            <li>Resize browser window to mobile size (< 768px)</li>
+            <li>Check that layout adapts properly</li>
+            <li>Verify all buttons are clickable</li>
+            <li>Ensure text is readable</li>
+            <li>Test on actual mobile device if possible</li>
+        </ul>
+    </div>
+
+    <div class="test-section">
+        <h2>🐛 Common Issues & Solutions</h2>
+        <table style="width:100%; border-collapse: collapse;">
+            <tr style="background: #f9f9f9;">
+                <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Problem</th>
+                <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Solution</th>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">Blank page</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Check console for errors, verify file paths</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">Quiz won't advance</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Select an option first (this is intentional!)</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">Charts not showing</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Complete quiz first, check internet connection</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">Images broken</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Put images in <code>0_images/</code> folder</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">Sliders not working</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Select a celebrity first</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="test-section">
+        <h2>🎯 Final Check</h2>
+        <p><strong>If you can complete this workflow, you're ready to go:</strong></p>
+        <ol style="line-height: 2; background: #fffbeb; padding: 20px; border-radius: 5px;">
+            <li>Load the page ✓</li>
+            <li>Scroll down to quiz ✓</li>
+            <li>Complete all 7 questions ✓</li>
+            <li>See your results ✓</li>
+            <li>View state comparison chart ✓</li>
+            <li>See celebrity comparison chart ✓</li>
+            <li>Select a celebrity in calculator ✓</li>
+            <li>Adjust sliders and see calculations ✓</li>
+            <li>Restart quiz ✓</li>
+        </ol>
+    </div>
+
+    <div class="test-section" style="background: #e8f5e9; border: 2px solid #4caf50;">
+        <h2 style="color: #2e7d32;">🚀 Ready to Launch!</h2>
+        <p style="font-size: 18px;">
+            Once all tests pass, close this file and open <code>index.html</code> for the full experience.
+        </p>
+        <p style="margin-top: 20px;">
+            <strong>Remember:</strong> The site works without images, but images make the Taylor Swift comparison section much more impactful!
+        </p>
+    </div>
+
+    <div class="test-section">
+        <h2>💡 Pro Tips</h2>
+        <ul>
+            <li>Use Chrome DevTools (F12) to debug any issues</li>
+            <li>Test in private/incognito mode to avoid cache issues</li>
+            <li>Keep this test file for future reference</li>
+            <li>Take screenshots of working features as backup</li>
+            <li>Have a backup plan if presenting (screenshots, recorded demo)</li>
+        </ul>
+    </div>
+
+    <footer style="text-align: center; margin-top: 50px; color: #999; padding: 20px;">
+        <p>Created for Data Visualization - Columbia University</p>
+        <p>By Julio, Ayomikun, and Elizabeth</p>
+    </footer>
+
+</body>
+</html>

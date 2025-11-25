@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Not Your Average Carbon Footprint Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+
+    <div id="container">
+        <div id="content">
+
+            <!-- Panel 1: Main Title -->
+            <div class="panel title-panel">
+                <h1>Not Your Average Carbon Footprint Quiz</h1>
+                <p class="subtitle">Exposing Carbon Footprint Propaganda</p>
+                <div class="scroll-hint">↓ Scroll to begin ↓</div>
+            </div>
+
+            <!-- Panel 2: Introduction -->
+            <div class="panel intro-panel">
+                <h3>Private jets have become one of the clearest symbols of modern inequality: 
+                    a tiny elite soaring above the world while the rest of us absorb the costs. 
+                    Each hour of private flight emits more carbon than many people produce in an 
+                    entire year. Yet these flights are increasing, often subsidized through 
+                    loopholes and tax breaks. What does it mean when luxury travel becomes a 
+                    collective burden?
+                </h3>
+                <div class="scroll-hint">↓ Continue to quiz ↓</div>
+            </div>
+
+            <!-- Panel 3: Quiz Section -->
+            <div class="panel quiz-panel" id="quiz-panel">
+                <h2>Calculate Your Carbon Footprint</h2>
+                <p class="quiz-warning">⚠️ You must complete this quiz to see the rest of the content</p>
+                <div class="question_box" id="quiz-box">
+                    <p id="quiz-question"></p>
+                    <div id="quiz-options"></div>
+                    <div id="quiz-state" style="display:none; margin-top: 20px;">
+                        <select id="state-select"></select>
+                    </div>
+                    <div style="margin-top: 40px;">
+                        <button class="btn1" id="quiz-next-btn">Next</button>
+                    </div>
+                    <div id="quiz-results" style="display:none; margin-top: 40px;">
+                        Your total CO₂ emissions: 0 tons/year
+                    </div>
+                    <button class="btn1" id="quiz-restart-btn" style="display:none; margin-top: 20px;">
+                        Restart Quiz
+                    </button>
+                </div>
+            </div>
+
+            <!-- Panel 4: Context -->
+            <div class="panel context-panel" id="context-panel" style="display:none;">
+                <h3>Climate action has been framed as an individual responsibility: buy reusable bags, 
+                    eat less meat, take shorter showers. But when a single private jet flight emits as 
+                    much CO2 as the average person produces in a year, we're not all in the same boat 
+                    (some of us are in yachts).
+                    <br><br>
+                    <strong>But how guilty should you REALLY feel?</strong>
+                    <br><br>
+                    Let's see how your footprint compares to celebrities who fly private jets.
+                </h3>
+                <div class="scroll-hint">↓ See the comparison ↓</div>
+            </div>
+
+            <!-- Panel 5: Celebrity Comparison Chart -->
+            <div class="panel chart-panel" id="celebrity-chart-panel" style="display:none;">
+                <h2>Your Emissions vs Celebrity Private Jet Emissions</h2>
+                <div id="chart"></div>
+                <div class="scroll-hint">↓ See it in context ↓</div>
+            </div>
+
+            <!-- Panel 7: Taylor Swift Comparison -->
+            <div class="panel swift-comparison-panel" id="swift-panel" style="display:none;">
+                <div class="swift-caption">
+                    <i>Taylor Swift's 2023 jet emissions = 560 years of your life or 7 lifetimes</i>
+                </div>
+
+                <div class="swift-row">
+                    <div class="swift-left">
+                        <div class="image-panel2">
+                            <img src="0_images/TaylorSwift.png" alt="Taylor Swift Jet" class="panel2-image">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comparison-grid">
+                    <div class="col left-col">
+                        <h4>Avg American</h4>
+                        <div class="item">
+                            <img src="0_images/stick_figure.png" alt="">
+                            <p>Human life<br>expectancy</p>
+                        </div>
+                        <div class="item">
+                            <img src="0_images/puddle.png" alt="">
+                            <p>Small puddle</p>
+                        </div>
+                        <div class="item">
+                            <img src="0_images/apartment_plants.png" alt="">
+                            <p>Apartment plants</p>
+                        </div>
+                        <div class="item">
+                            <img src="0_images/match.png" alt="">
+                            <p>A match<br>flame</p>
+                        </div>
+                    </div>
+
+                    <div class="col right-col">
+                        <h4>Taylor Swift</h4>
+                        <div class="item">
+                            <img src="0_images/clam.png" alt="">
+                            <p>Quahog clam<br>(500+ years)</p>
+                        </div>
+                        <div class="item">
+                            <img src="0_images/earth.png" alt="">
+                            <p>The Atlantic<br>Ocean</p>
+                        </div>
+                        <div class="item">
+                            <img src="0_images/amazon.png" alt="">
+                            <p>Amazon<br>rainforest</p>
+                        </div>
+                        <div class="item">
+                            <img src="0_images/bright_sun.png" alt="">
+                            <p>The sun</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-hint">↓ Calculate your sacrifice ↓</div>
+            </div>
+
+            <!-- Panel 8: Interactive Sacrifice Calculator -->
+            <div class="panel sacrifice-panel" id="sacrifice-panel" style="display:none;">
+                <h2>What Would You Have to Sacrifice?</h2>
+                <p class="subtitle">Select a celebrity and see what you'd need to give up to match their emissions</p>
+                
+                <div class="celebrity-selector">
+                    <button class="celebrity-btn" data-celebrity="Taylor Swift">Taylor Swift</button>
+                    <button class="celebrity-btn" data-celebrity="Elon Musk">Elon Musk</button>
+                    <button class="celebrity-btn" data-celebrity="Kim Kardashian">Kim Kardashian</button>
+                </div>
+
+                <div id="sacrifice-calculator" style="display:none;">
+                    <h3 id="selected-celebrity-name"></h3>
+                    <p id="emissions-gap"></p>
+                    
+                    <div class="sacrifice-sliders">
+                        <div class="slider-group">
+                            <label>Years without driving:</label>
+                            <input type="range" id="slider-driving" min="0" max="100" value="0" class="sacrifice-slider">
+                            <span id="value-driving">0 years</span>
+                            <span class="co2-saved" id="co2-driving">0 tons CO₂</span>
+                        </div>
+
+                        <div class="slider-group">
+                            <label>Years of vegan diet:</label>
+                            <input type="range" id="slider-vegan" min="0" max="100" value="0" class="sacrifice-slider">
+                            <span id="value-vegan">0 years</span>
+                            <span class="co2-saved" id="co2-vegan">0 tons CO₂</span>
+                        </div>
+
+                        <div class="slider-group">
+                            <label>Years without flying:</label>
+                            <input type="range" id="slider-flying" min="0" max="100" value="0" class="sacrifice-slider">
+                            <span id="value-flying">0 years</span>
+                            <span class="co2-saved" id="co2-flying">0 tons CO₂</span>
+                        </div>
+
+                        <div class="slider-group">
+                            <label>Years without buying new clothes:</label>
+                            <input type="range" id="slider-clothes" min="0" max="100" value="0" class="sacrifice-slider">
+                            <span id="value-clothes">0 years</span>
+                            <span class="co2-saved" id="co2-clothes">0 tons CO₂</span>
+                        </div>
+                    </div>
+
+                    <div id="sacrifice-result">
+                        <h3>Total Savings: <span id="total-saved">0</span> tons CO₂</h3>
+                        <p id="gap-message">You need to save <span id="remaining-gap">0</span> more tons</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="bottom-image">
+                <img src="0_images/World.png" alt="World image" class="world">
+            </div>
+            <div class="footer_wrapper">
+                <footer>• This website was created by Julio, Ayomikun, and Elizabeth for our Data Visualization class at Columbia University!</footer>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

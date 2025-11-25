@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+    <title>multiple choice</title>
+    <style>
+        body{font-family:sans-serif;font-size:24px;}
+        .q1 {display:inline-block; padding:10px;}
+        .q2 {display:inline-block; padding:10px;}
+        .answer{display:inline-block; padding:10px;}
+    </style>
+</head>
+<body>
+   <div>buttons</div>
+
+    <div>Q1:</div>
+    <div class="q1" value="40" id="q1_40">40</div>
+    <div class="q1" value="60" id="q1_60">60</div>
+    <div class="q1" value="80" id="q1_80">80</div>
+
+   <div>Q2:</div>
+    <div class="q2" value="40" id="q2_40">40</div>
+    <div class="q2" value="60" id="q2_60">60</div>
+    <div class="q2" value="80" id="q2_80">80</div>
+
+    <div>Answer:</div>
+    <div class="answer" id="answer"></div>
+    <script>
+
+        var total = 0
+        var q1Value =0
+        var q2Value =0
+
+        d3.selectAll(".q1")
+        .each(function(){
+            d3.select(this).on("click",function(){
+                q1Value = parseInt(d3.select(this).attr("value"))
+                d3.selectAll(".q1").style("color","black")
+                d3.select(this).style("color","red")
+                console.log(q1Value,q2Value)
+
+                total = q1Value+q2Value
+                d3.select("#answer").html(total)
+            })
+        })
+
+         d3.selectAll(".q2")
+        .each(function(){
+            d3.select(this).on("click",function(){
+                q2Value = parseInt(d3.select(this).attr("value"))
+                d3.selectAll(".q2").style("color","black")
+                d3.select(this).style("color","red")
+
+                console.log(q1Value,q2Value)
+                 total = q1Value+q2Value
+                d3.select("#answer").html(total)
+            })
+        })
+   
+
+    </script>
+</body>
+</html>
